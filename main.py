@@ -20,8 +20,8 @@ spark = SparkSession.builder \
 # กำหนดสิทธิ์ให้ log แสดงเฉพาะ ERROR จะได้ไม่เกะกะ
 spark.sparkContext.setLogLevel("ERROR")
 
-# ตรวจสอบว่ามีข้อมูลจาก GitHub หรือไม่
-data_dir = r"c:\Users\USER\OneDrive\Documents\BEAM\ANN\goodbooks-10k"
+# ตรวจสอบว่ามีข้อมูลในโฟลเดอร์หรือไม่
+data_dir = "goodbooks-10k"
 ratings_path = os.path.join(data_dir, "ratings.csv")
 books_path = os.path.join(data_dir, "books.csv")
 
